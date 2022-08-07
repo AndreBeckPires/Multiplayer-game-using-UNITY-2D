@@ -11,6 +11,9 @@ public class movementscript : MonoBehaviour
     void Update()
     {
         Vector3 pos = transform.position;
+        Vector3 mousePosition = (Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        Vector2 direction = (mousePosition - transform.position).normalized;
+
 
         if (Input.GetKey("w")) 
         {
@@ -30,5 +33,6 @@ public class movementscript : MonoBehaviour
         }
 
         transform.position = pos;
+        transform.up = direction;
     }
 }

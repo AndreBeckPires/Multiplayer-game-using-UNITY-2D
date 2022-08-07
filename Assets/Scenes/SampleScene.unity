@@ -285,6 +285,7 @@ GameObject:
   - component: {fileID: 247707664}
   - component: {fileID: 247707663}
   - component: {fileID: 247707662}
+  - component: {fileID: 247707666}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -367,7 +368,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 80a961dfed228d940ba0580ece9a36c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 425a151e0b8a2fb488c80fc6834e6440, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -387,11 +388,28 @@ Transform:
   m_GameObject: {fileID: 247707661}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.44, y: -5.12, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.9723, y: 1.9723, z: 1.9723}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &247707666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247707661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6635598f94a3ab04d986abbd88373a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starPrefab:
+  - {fileID: 5275571747858550627, guid: a6d306a266ac1bf4390ba9b820a27863, type: 3}
+  firePoint: {fileID: 247707665}
+  pos: {x: 0, y: 0, z: 0}
+  bulletForce: 20
 --- !u!1 &271851971
 GameObject:
   m_ObjectHideFlags: 0

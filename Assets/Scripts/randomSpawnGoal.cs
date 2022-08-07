@@ -23,7 +23,6 @@ public class randomSpawnGoal : MonoBehaviour
     void Update()
     {   
         TimeCounter();
-        print(timeRemaining);
 
 
         
