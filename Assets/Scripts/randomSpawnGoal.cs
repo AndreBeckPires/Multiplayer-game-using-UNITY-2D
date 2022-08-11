@@ -15,8 +15,8 @@ public class randomSpawnGoal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeRemaining = Random.Range(3,12);
-        timeRemaining2 = Random.Range(6,18);
+        timeRemaining = resetTiming();
+        timeRemaining2 = resetTiming();
     }
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class randomSpawnGoal : MonoBehaviour
         }
         if(timeRemaining < 0){
             SpawnGoal();
-            timeRemaining = Random.Range(6,18);
+            timeRemaining = resetTiming();;
         }
          if(timeRemaining2 > 0)
         {
@@ -42,7 +42,7 @@ public class randomSpawnGoal : MonoBehaviour
         }
         if(timeRemaining2 < 0){
             SpawnObstacle();
-            timeRemaining2 = Random.Range(6,18);
+            timeRemaining2 = resetTiming();
         }
     }
     void SpawnGoal(){
@@ -59,5 +59,10 @@ public class randomSpawnGoal : MonoBehaviour
 
 
         Instantiate(obstaclePrefabs[randObstacle], spawnPointsObstacle[randSpawnPoint].position, transform.rotation);    
+    }
+    float resetTiming()
+    {
+        float min = 3, max = 7;
+        return Random.Range(min,max);
     }
 }

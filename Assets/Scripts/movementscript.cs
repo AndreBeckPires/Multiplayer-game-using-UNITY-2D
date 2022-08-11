@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class movementscript : MonoBehaviour
    public float speed = 10.5f; 
 
     // Update is called once per frame
+   
     void Update()
     {
         Vector3 pos = transform.position;
@@ -30,7 +32,7 @@ public class movementscript : MonoBehaviour
         if (Input.GetKey("a")) 
         {
             pos.x -= speed * Time.deltaTime;
-        }
+        } 
 
         transform.position = pos;
         transform.up = direction;
