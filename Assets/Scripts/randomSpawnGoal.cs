@@ -4,7 +4,7 @@ using System.Threading;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Photon.Pun;
 public class randomSpawnGoal : MonoBehaviour
 {
     public Transform[] spawnPoints;
@@ -49,16 +49,16 @@ public class randomSpawnGoal : MonoBehaviour
         int randGoal = Random.Range(0, goalPrefabs.Length);
         int randSpawnPoint = Random.Range(0,spawnPoints.Length);
 
-
-        Instantiate(goalPrefabs[randGoal], spawnPoints[randSpawnPoint].position, transform.rotation);    
+        PhotonNetwork.Instantiate(goalPrefabs[randGoal].name, spawnPoints[randSpawnPoint].position, transform.rotation);   
+        //Instantiate(goalPrefabs[randGoal], spawnPoints[randSpawnPoint].position, transform.rotation);    
     }
 
     void SpawnObstacle(){
         int randObstacle = Random.Range(0, obstaclePrefabs.Length);
         int randSpawnPoint = Random.Range(0,spawnPoints.Length);
 
-
-        Instantiate(obstaclePrefabs[randObstacle], spawnPointsObstacle[randSpawnPoint].position, transform.rotation);    
+        PhotonNetwork.Instantiate(obstaclePrefabs[randObstacle].name, spawnPointsObstacle[randSpawnPoint].position, transform.rotation);    
+       // Instantiate(obstaclePrefabs[randObstacle], spawnPointsObstacle[randSpawnPoint].position, transform.rotation);    
     }
     float resetTiming()
     {
