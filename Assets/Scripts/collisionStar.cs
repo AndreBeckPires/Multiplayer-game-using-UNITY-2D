@@ -3,10 +3,12 @@ using System.Collections.ObjectModel;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class collisionStar : MonoBehaviour
 {
      public GameObject obj;
+      PhotonView view;
      void Awake(){
         obj = GameObject.FindGameObjectWithTag("Counter");
      }
@@ -17,8 +19,8 @@ public class collisionStar : MonoBehaviour
         if (coll.transform.tag == "Goal")
         {
              print("colidiu");
-            Destroy(coll.gameObject);
-            Destroy(this.gameObject);
+            PhotonNetwork.Destroy(coll.gameObject);
+            PhotonNetwork.Destroy(this.gameObject);
             obj.GetComponent<pointsCounter>().points++;
             // Disables the Collider2D component
            
