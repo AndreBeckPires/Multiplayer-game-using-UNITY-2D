@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Goal
   - Counter
+  - BOX
+  - Player1
+  - Goal2
+  - BOX2
   layers:
   - Default
   - TransparentFX

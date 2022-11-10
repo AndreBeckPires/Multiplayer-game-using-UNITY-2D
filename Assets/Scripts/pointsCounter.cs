@@ -3,19 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 public class pointsCounter : MonoBehaviour
 {
-    public float points;
-    public Text scoreText;
+    PhotonView view;
+    public float points1,points2;
+    public Text scoreText, scoreText2;
     // Start is called before the first frame update
+    void Awake(){
+       
+    }
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
-    {
-        scoreText.text = "Score : " + points;
+    {   
+        scoreText.text = "Score : " + points1;
+        
+        scoreText2.text = "Score : " + points2; 
+           
     }
+
+
 }
