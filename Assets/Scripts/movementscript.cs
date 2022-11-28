@@ -15,6 +15,7 @@ public class movementscript : MonoBehaviour
    
     private void Start(){
         view = GetComponent<PhotonView>();
+        Debug.Log(PhotonNetwork.LocalPlayer.ActorNumber);
     }
     void Update()
     {
@@ -30,6 +31,7 @@ public class movementscript : MonoBehaviour
             if (Input.GetKey("w")) 
             {
                 pos.y += speed * Time.deltaTime;
+                
             }
             if (Input.GetKey("s")) 
             {

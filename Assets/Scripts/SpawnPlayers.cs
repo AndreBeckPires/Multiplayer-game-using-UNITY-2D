@@ -16,14 +16,19 @@ public class SpawnPlayers : MonoBehaviour
     private void Start() 
     {
         Vector2 randomPosition = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxY));
-        newPrefab = PhotonNetwork.Instantiate(playerPrefab.name, randomPosition, Quaternion.identity);
+        
         if(PhotonNetwork.CurrentRoom.PlayerCount == 1)
-        {
+        {   
+            Vector2 pos = new Vector2(-0.06f, 6.14f);
+            newPrefab = PhotonNetwork.Instantiate(playerPrefab.name, pos, Quaternion.identity);
             newPrefab.tag = "Player1";
             
         }
         else{
-            newPrefab.tag = "Player0";
+            
+             Vector2 pos = new Vector2(-1.397282f, -5.053027f);
+            newPrefab = PhotonNetwork.Instantiate(playerPrefab.name, pos, Quaternion.identity);
+            newPrefab.tag = "Player2";
 
         }
     }

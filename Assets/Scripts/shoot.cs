@@ -35,6 +35,7 @@ public class shoot : MonoBehaviour
     void trigger(){
         GameObject bullet =  PhotonNetwork.Instantiate(starPrefab[0].name, pos, transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        bullet.tag = "star1";
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }
 }

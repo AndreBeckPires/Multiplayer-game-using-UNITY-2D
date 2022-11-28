@@ -13,7 +13,7 @@ public class collisionStar : MonoBehaviour
         obj = GameObject.FindGameObjectWithTag("Counter");
      }
      void Start(){
-        view = PhotonView.Get(this);
+       view = PhotonView.Get(this);
      }
     // Start is called before the first frame update
  
@@ -23,9 +23,13 @@ public class collisionStar : MonoBehaviour
         if (coll.transform.tag == "Goal")
         {
   
+            if(GetComponent<PhotonView>().IsMine)
+            {
             PhotonNetwork.Destroy(coll.gameObject);
             PhotonNetwork.Destroy(this.gameObject);
-            view.RPC("increment1", RpcTarget.AllBuffered);
+            }
+           
+           // view.RPC("increment1", RpcTarget.AllBuffered);
             // Disables the Collider2D component          
         }   
         if (coll.transform.tag == "BOX")
@@ -38,25 +42,13 @@ public class collisionStar : MonoBehaviour
   
             PhotonNetwork.Destroy(coll.gameObject);
             PhotonNetwork.Destroy(this.gameObject);
-            view.RPC("increment2", RpcTarget.AllBuffered);
+            //view.RPC("increment2", RpcTarget.AllBuffered);
             // Disables the Collider2D component          
         }   
-        if (coll.transform.tag == "BOX2")
-        {            
-            PhotonNetwork.Destroy(this.gameObject);
-            // Disables the Collider2D component    
-        }
+
         
          
     }
 
-    [PunRPC]
-    void increment1(){
-        obj.GetComponent<pointsCounter>().points1++;
-        Debug.Log("chamou");
-    }
-    [PunRPC]
-    void increment2(){
-        obj.GetComponent<pointsCounter>().points2++;
-    }
+  
     }

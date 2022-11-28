@@ -32,8 +32,13 @@ public class charManager : MonoBehaviour
 
     public void PlayGame()
     {
-        PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/Prefabs/selected.prefab");
-        SceneManager.LoadScene("testephase");
+        #if UNITY_EDITOR
+
+  PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/Prefabs/selected.prefab");
+
+#endif
+        
+        SceneManager.LoadScene("SampleScene");
     }
 
 }
