@@ -9,6 +9,7 @@ public class collisionStar : MonoBehaviour
 {
      public GameObject obj;
     PhotonView view;
+    public GameObject explosion;
      void Awake(){
         obj = GameObject.FindGameObjectWithTag("Counter");
      }
@@ -27,6 +28,7 @@ public class collisionStar : MonoBehaviour
             {
             PhotonNetwork.Destroy(coll.gameObject);
             PhotonNetwork.Destroy(this.gameObject);
+            PhotonNetwork.Instantiate(explosion.name,transform.position, transform.rotation); 
             }
            
            // view.RPC("increment1", RpcTarget.AllBuffered);
@@ -42,6 +44,7 @@ public class collisionStar : MonoBehaviour
   
             PhotonNetwork.Destroy(coll.gameObject);
             PhotonNetwork.Destroy(this.gameObject);
+            PhotonNetwork.Instantiate(explosion.name,transform.position, transform.rotation); 
             //view.RPC("increment2", RpcTarget.AllBuffered);
             // Disables the Collider2D component          
         }   

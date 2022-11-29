@@ -6,7 +6,7 @@ using Photon.Pun;
 public class SpawnPlayers : MonoBehaviour
 {
     // Start is called before the first frame update
-    public GameObject playerPrefab;
+    public GameObject playerPrefab,playerPrefab2 ;
     public GameObject newPrefab;
     public float minX;
     public float maxX;
@@ -27,7 +27,7 @@ public class SpawnPlayers : MonoBehaviour
         else{
             
              Vector2 pos = new Vector2(-1.397282f, -5.053027f);
-            newPrefab = PhotonNetwork.Instantiate(playerPrefab.name, pos, Quaternion.identity);
+            newPrefab = PhotonNetwork.Instantiate(playerPrefab2.name, pos, Quaternion.identity);
             newPrefab.tag = "Player2";
 
         }

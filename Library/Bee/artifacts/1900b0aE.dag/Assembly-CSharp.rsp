@@ -379,6 +379,7 @@
 "Assets/Scripts/detroy.cs"
 "Assets/Scripts/gameManager.cs"
 "Assets/Scripts/lifeObs.cs"
+"Assets/Scripts/lifeOfGoal.cs"
 "Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/movementscript.cs"
 "Assets/Scripts/pointsCounter.cs"

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -5938405266723285452}
   - component: {fileID: -5772081716099801344}
   - component: {fileID: 1892636434280374764}
+  - component: {fileID: -6627675459272864496}
   m_Layer: 0
   m_Name: GOAL DO TIPO 1 -3
   m_TagString: Goal
@@ -146,3 +147,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9b4b7a6a8adf704aba60b4d44667335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeRemaining: 0
+--- !u!114 &-6627675459272864496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030652179500392477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a16e429d25ef94bbc0743fbd739a89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hits: 0
+  explosion: {fileID: 8290851362502176957, guid: 282fbd759d66be1448cb5f5fae538698, type: 3}
