@@ -6,7 +6,8 @@ using Photon.Pun;
 public class lifeObs : MonoBehaviour
 {
      PhotonView view;
-     public int hits = 0;
+    public int hits = 0;
+    public GameObject explosion;
     // Start is called before the first frame update
     void Start()
     {   
@@ -19,7 +20,10 @@ public class lifeObs : MonoBehaviour
     {
         if(hits >= 3)
         {
-             PhotonNetwork.Destroy(this.gameObject);
+           // Instantiate(explosion, transform.position, Quaternion.identity);           
+           
+            PhotonNetwork.Destroy(this.gameObject);
+            PhotonNetwork.Instantiate(explosion.name,transform.position, transform.rotation); 
         }
     }
 

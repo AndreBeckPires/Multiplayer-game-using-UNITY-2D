@@ -4,8 +4,9 @@ using UnityEngine;
 using Photon.Pun;
 public class detroy : MonoBehaviour
 {   
-     PhotonView view;
-      public float timeRemaining;
+    PhotonView view;
+    public float timeRemaining;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class detroy : MonoBehaviour
               if(timeRemaining < 0)
         {
             timeRemaining -= Time.deltaTime;
+           
             PhotonNetwork.Destroy(this.gameObject);
         }
     }
