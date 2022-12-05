@@ -33,6 +33,7 @@ public class shoot : MonoBehaviour
            
     }
     void trigger(){
+     
         if(this.gameObject.tag == "Player1")
         {
         GameObject bullet =  PhotonNetwork.Instantiate(starPrefab[0].name, pos, transform.rotation);

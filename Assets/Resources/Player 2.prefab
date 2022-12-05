@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10.5
+  painel: {fileID: 0}
 --- !u!114 &8975462723612332885
 MonoBehaviour:
   m_ObjectHideFlags: 0

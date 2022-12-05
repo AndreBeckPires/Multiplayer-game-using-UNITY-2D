@@ -124,6 +124,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10.5
+  time: 0
+  timerText: {fileID: 0}
+  contar: 0
+  endgame: {fileID: 0}
+  canvas: {fileID: 0}
 --- !u!114 &8975462723612332885
 MonoBehaviour:
   m_ObjectHideFlags: 0
