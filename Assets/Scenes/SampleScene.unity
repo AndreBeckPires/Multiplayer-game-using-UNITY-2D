@@ -1358,6 +1358,7 @@ MonoBehaviour:
   rangeY1: 0
   rangeY2: 0
   player: 0
+  playing: 0
 --- !u!1 &1129607208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,6 +1587,7 @@ MonoBehaviour:
   rangeY1: 0
   rangeY2: 0
   player: 0
+  playing: 0
 --- !u!4 &1206183019
 Transform:
   m_ObjectHideFlags: 0
