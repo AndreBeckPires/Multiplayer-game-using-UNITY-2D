@@ -21,7 +21,7 @@ public class collisionStar : MonoBehaviour
         void OnCollisionEnter2D(Collision2D coll)
     {
         // If the Collider2D component is enabled on the collided object
-        if (coll.transform.tag == "Goal")
+        if (this.gameObject.tag == "star" && coll.transform.tag == "Goal")
         {
   
             if(GetComponent<PhotonView>().IsMine)
@@ -34,12 +34,12 @@ public class collisionStar : MonoBehaviour
            // view.RPC("increment1", RpcTarget.AllBuffered);
             // Disables the Collider2D component          
         }   
-        if (coll.transform.tag == "BOX")
+        if (this.gameObject.tag == "star" && coll.transform.tag == "BOX")
         {            
             PhotonNetwork.Destroy(this.gameObject);
             // Disables the Collider2D component    
         }
-             if (coll.transform.tag == "Goal2")
+        if (this.gameObject.tag == "star2" && coll.transform.tag == "Goal2")
         {
   
             PhotonNetwork.Destroy(coll.gameObject);
@@ -47,7 +47,46 @@ public class collisionStar : MonoBehaviour
             PhotonNetwork.Instantiate(explosion.name,transform.position, transform.rotation); 
             //view.RPC("increment2", RpcTarget.AllBuffered);
             // Disables the Collider2D component          
+        }
+        if (this.gameObject.tag == "star2" && coll.transform.tag == "BOX2")
+        {            
+            PhotonNetwork.Destroy(this.gameObject);
+            // Disables the Collider2D component    
+        } 
+
+
+
+        //contrario
+         if (this.gameObject.tag == "star" && coll.transform.tag == "Goal2")
+        {
+  
+            if(GetComponent<PhotonView>().IsMine)
+            {
+            PhotonNetwork.Destroy(this.gameObject);           
+            }
+           
+           // view.RPC("increment1", RpcTarget.AllBuffered);
+            // Disables the Collider2D component          
         }   
+        if (this.gameObject.tag == "star" && coll.transform.tag == "BOX2")
+        {            
+            PhotonNetwork.Destroy(this.gameObject);
+            // Disables the Collider2D component    
+        }
+        if (this.gameObject.tag == "star2" && coll.transform.tag == "Goal")
+        {
+  
+            
+            PhotonNetwork.Destroy(this.gameObject);
+          
+            //view.RPC("increment2", RpcTarget.AllBuffered);
+            // Disables the Collider2D component          
+        }
+        if (this.gameObject.tag == "star2" && coll.transform.tag == "BOX")
+        {            
+            PhotonNetwork.Destroy(this.gameObject);
+            // Disables the Collider2D component    
+        }
 
         
          

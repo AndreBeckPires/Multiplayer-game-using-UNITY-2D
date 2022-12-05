@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 646192718903939410}
   m_Layer: 0
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -138,6 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starPrefab:
   - {fileID: 5275571747858550627, guid: a6d306a266ac1bf4390ba9b820a27863, type: 3}
+  - {fileID: 5275571747858550627, guid: dda5070c137cfbe4ba2d4a9d506e7617, type: 3}
   firePoint: {fileID: 7260637696574470907}
   pos: {x: 0, y: 0, z: 0}
   bulletForce: 20
@@ -178,12 +179,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goalPrefabs:
   - {fileID: 1716519500247187889, guid: 28231caed5785084ebebcbe36254619d, type: 3}
-  - {fileID: 4389399920028949274, guid: 4c7c065a1c9896f489ddbae3be43cda8, type: 3}
-  - {fileID: 2030652179500392477, guid: c0054596661faa649bb626266631f349, type: 3}
+  - {fileID: 1716519500247187889, guid: 28231caed5785084ebebcbe36254619d, type: 3}
+  - {fileID: 1716519500247187889, guid: 28231caed5785084ebebcbe36254619d, type: 3}
   obstaclePrefabs:
   - {fileID: 2580388865926125696, guid: 3d959909cfccb1c479a98f195b6cfe4c, type: 3}
-  - {fileID: 3563769966488759806, guid: f084bba422311a24aab13ad27579e2a0, type: 3}
-  - {fileID: 8643076274713616056, guid: 19c829a61c89409439b421c21a8bb2fd, type: 3}
+  - {fileID: 2580388865926125696, guid: 3d959909cfccb1c479a98f195b6cfe4c, type: 3}
+  - {fileID: 2580388865926125696, guid: 3d959909cfccb1c479a98f195b6cfe4c, type: 3}
   timeRemaining: 0
   timeRemaining2: 0
   rangeX1: 0

@@ -19,7 +19,7 @@ public class randomSpawnGoal : MonoBehaviour
     {
         timeRemaining = resetTiming();
         timeRemaining2 = resetTiming();
-        if(PhotonNetwork.LocalPlayer.ActorNumber == 1)
+        if(this.gameObject.tag == "Player1")
         {
             rangeX1 = -19f;
             rangeX2 = 19f;
@@ -28,7 +28,9 @@ public class randomSpawnGoal : MonoBehaviour
             //rangeO = 8;
 
         }
-        else{   
+         if(this.gameObject.tag == "Player2")
+        {   
+            Debug.Log("entrou");
             rangeX1 = -19f;
             rangeX2 = 19f;
             rangeY1 = 1.60f;

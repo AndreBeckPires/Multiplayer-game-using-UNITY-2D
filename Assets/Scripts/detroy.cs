@@ -25,13 +25,14 @@ public class detroy : MonoBehaviour
               if(timeRemaining < 0)
         {
             timeRemaining -= Time.deltaTime;
-           
+            Debug.Log("aa");
             PhotonNetwork.Destroy(this.gameObject);
         }
     }
     void TimeCounter(){
        
         if(timeRemaining < 0){
+           
             detroyGoal();
             timeRemaining = resetTiming();
         }

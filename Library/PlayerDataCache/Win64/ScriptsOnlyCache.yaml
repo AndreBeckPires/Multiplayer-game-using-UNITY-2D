@@ -28,8 +28,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -107,11 +105,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3054}
     - Class: 114
-      Script: {instanceID: 4248}
+      Script: {instanceID: 4250}
     - Class: 114
-      Script: {instanceID: 6560}
+      Script: {instanceID: 6562}
     - Class: 114
-      Script: {instanceID: 7136}
+      Script: {instanceID: 7138}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -160,17 +158,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3388}
     - Class: 114
-      Script: {instanceID: 4528}
+      Script: {instanceID: 4530}
     - Class: 114
-      Script: {instanceID: 4540}
+      Script: {instanceID: 4542}
     - Class: 114
-      Script: {instanceID: 5868}
+      Script: {instanceID: 5870}
     - Class: 114
-      Script: {instanceID: 6560}
+      Script: {instanceID: 6562}
     - Class: 114
-      Script: {instanceID: 6752}
+      Script: {instanceID: 6754}
     - Class: 114
-      Script: {instanceID: 7136}
+      Script: {instanceID: 7138}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -229,25 +227,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3292}
     - Class: 114
-      Script: {instanceID: 4082}
+      Script: {instanceID: 3684}
     - Class: 114
-      Script: {instanceID: 5038}
+      Script: {instanceID: 4084}
     - Class: 114
-      Script: {instanceID: 5062}
+      Script: {instanceID: 5040}
     - Class: 114
-      Script: {instanceID: 5098}
+      Script: {instanceID: 5064}
     - Class: 114
-      Script: {instanceID: 6560}
+      Script: {instanceID: 5100}
     - Class: 114
-      Script: {instanceID: 6826}
+      Script: {instanceID: 6562}
     - Class: 114
-      Script: {instanceID: 7136}
+      Script: {instanceID: 6828}
     - Class: 114
-      Script: {instanceID: 8626}
+      Script: {instanceID: 7138}
     - Class: 114
-      Script: {instanceID: 9280}
+      Script: {instanceID: 8628}
     - Class: 114
-      Script: {instanceID: 24664}
+      Script: {instanceID: 9282}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -300,9 +298,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3528}
     - Class: 114
-      Script: {instanceID: 6560}
+      Script: {instanceID: 6562}
     - Class: 114
-      Script: {instanceID: 7136}
+      Script: {instanceID: 7138}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -387,59 +385,59 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3388}
     - Class: 114
-      Script: {instanceID: 4082}
+      Script: {instanceID: 3684}
     - Class: 114
-      Script: {instanceID: 4292}
+      Script: {instanceID: 4084}
     - Class: 114
-      Script: {instanceID: 4296}
+      Script: {instanceID: 4294}
     - Class: 114
-      Script: {instanceID: 4488}
+      Script: {instanceID: 4298}
     - Class: 114
-      Script: {instanceID: 4528}
+      Script: {instanceID: 4490}
     - Class: 114
-      Script: {instanceID: 4540}
+      Script: {instanceID: 4530}
     - Class: 114
-      Script: {instanceID: 4658}
+      Script: {instanceID: 4542}
     - Class: 114
-      Script: {instanceID: 4978}
+      Script: {instanceID: 4660}
     - Class: 114
-      Script: {instanceID: 5062}
+      Script: {instanceID: 4980}
     - Class: 114
-      Script: {instanceID: 5098}
+      Script: {instanceID: 5064}
     - Class: 114
-      Script: {instanceID: 5766}
+      Script: {instanceID: 5100}
     - Class: 114
-      Script: {instanceID: 5794}
+      Script: {instanceID: 5768}
     - Class: 114
-      Script: {instanceID: 5868}
+      Script: {instanceID: 5796}
     - Class: 114
-      Script: {instanceID: 6288}
+      Script: {instanceID: 5870}
     - Class: 114
-      Script: {instanceID: 6340}
+      Script: {instanceID: 6290}
     - Class: 114
-      Script: {instanceID: 6560}
+      Script: {instanceID: 6342}
     - Class: 114
-      Script: {instanceID: 6752}
+      Script: {instanceID: 6562}
     - Class: 114
-      Script: {instanceID: 7136}
+      Script: {instanceID: 6754}
     - Class: 114
-      Script: {instanceID: 7144}
+      Script: {instanceID: 7138}
     - Class: 114
-      Script: {instanceID: 7848}
+      Script: {instanceID: 7146}
     - Class: 114
-      Script: {instanceID: 8458}
+      Script: {instanceID: 7850}
     - Class: 114
-      Script: {instanceID: 8626}
+      Script: {instanceID: 8460}
     - Class: 114
-      Script: {instanceID: 8906}
+      Script: {instanceID: 8628}
     - Class: 114
-      Script: {instanceID: 9056}
+      Script: {instanceID: 8908}
     - Class: 114
-      Script: {instanceID: 9280}
+      Script: {instanceID: 9058}
     - Class: 114
-      Script: {instanceID: 9416}
+      Script: {instanceID: 9282}
     - Class: 114
-      Script: {instanceID: 24664}
+      Script: {instanceID: 9418}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -492,9 +490,9 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 4228}
+      Script: {instanceID: 4230}
     - Class: 114
-      Script: {instanceID: 6826}
+      Script: {instanceID: 6828}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1100,6 +1098,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: VariablesAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 48158920ba70a5e96c374a27f8e4c3e1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: lifeOfGoal
   - hash:
       serializedVersion: 2
       Hash: c656dcc13ae391b68d594cc8f9c590b0
@@ -2612,12 +2616,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 48158920ba70a5e96c374a27f8e4c3e1
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: lifeOfGoal
   platform: 19
   scenePathNames:
   - Assets/Scenes/menu.unity

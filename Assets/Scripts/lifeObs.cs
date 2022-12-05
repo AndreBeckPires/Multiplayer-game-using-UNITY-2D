@@ -21,7 +21,7 @@ public class lifeObs : MonoBehaviour
         if(hits >= 3)
         {
            // Instantiate(explosion, transform.position, Quaternion.identity);           
-           
+            this.GetComponent<detroy>().timeRemaining =0;
             PhotonNetwork.Destroy(this.gameObject);
             PhotonNetwork.Instantiate(explosion.name,transform.position, transform.rotation); 
         }
@@ -30,7 +30,11 @@ public class lifeObs : MonoBehaviour
          void OnCollisionEnter2D(Collision2D coll)
     {
         // If the Collider2D component is enabled on the collided object
-        if (coll.transform.tag == "star")
+        if (this.gameObject.tag == "BOX" && coll.transform.tag == "star")
+        {
+            hits ++;         
+        } 
+        if (this.gameObject.tag == "BOX2" && coll.transform.tag == "star2")
         {
             hits ++;         
         }   

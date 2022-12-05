@@ -11,6 +11,8 @@ TagManager:
   - Goal2
   - BOX2
   - star
+  - star2
+  - Player2
   layers:
   - Default
   - TransparentFX

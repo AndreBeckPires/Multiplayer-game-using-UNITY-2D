@@ -21,14 +21,14 @@ public class SpawnPlayers : MonoBehaviour
         {   
             Vector2 pos = new Vector2(-0.06f, 6.14f);
             newPrefab = PhotonNetwork.Instantiate(playerPrefab.name, pos, Quaternion.identity);
-            newPrefab.tag = "Player1";
+          
             
         }
         else{
             
              Vector2 pos = new Vector2(-1.397282f, -5.053027f);
             newPrefab = PhotonNetwork.Instantiate(playerPrefab2.name, pos, Quaternion.identity);
-            newPrefab.tag = "Player2";
+       
 
         }
     }

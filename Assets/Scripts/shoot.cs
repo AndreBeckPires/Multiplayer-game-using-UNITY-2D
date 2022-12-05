@@ -33,9 +33,22 @@ public class shoot : MonoBehaviour
            
     }
     void trigger(){
+        if(this.gameObject.tag == "Player1")
+        {
         GameObject bullet =  PhotonNetwork.Instantiate(starPrefab[0].name, pos, transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        bullet.tag = "star1";
+     
+        //bullet.tag = "star2";
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        }
+        else
+        {
+        GameObject bullet =  PhotonNetwork.Instantiate(starPrefab[1].name, pos, transform.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+     
+      //  bullet.tag = "star2";
+        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        }
     }
+       
 }
