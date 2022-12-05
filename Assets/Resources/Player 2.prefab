@@ -130,6 +130,7 @@ MonoBehaviour:
   endgame: {fileID: 0}
   canvas: {fileID: 0}
   pontos: 0
+  audioPaz: {fileID: 0}
 --- !u!114 &8975462723612332885
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -130,6 +130,7 @@ MonoBehaviour:
   endgame: {fileID: 0}
   canvas: {fileID: 0}
   pontos: 0
+  audioPaz: {fileID: 4969866267827472375, guid: b8ae063b0e1f1d047b61a074d4190f8b, type: 3}
 --- !u!114 &8975462723612332885
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class movementscript : MonoBehaviour
   public  Text endgame;
    public GameObject canvas;
    public int pontos = 0;
+   public AudioSource audioPaz;
     // Update is called once per frame
    
     private void Start(){
@@ -30,6 +31,8 @@ public class movementscript : MonoBehaviour
          canvas.SetActive(false);
          
          pontos = 0;
+        audioPaz = GetComponent<AudioSource>();
+        audioPaz.Play(0);
         
     }
     void Update()

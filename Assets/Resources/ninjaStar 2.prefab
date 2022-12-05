@@ -162,6 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 0}
   explosion: {fileID: 8290851362502176957, guid: 282fbd759d66be1448cb5f5fae538698, type: 3}
+  Player: {fileID: 0}
 --- !u!114 &7583251635145010120
 MonoBehaviour:
   m_ObjectHideFlags: 0

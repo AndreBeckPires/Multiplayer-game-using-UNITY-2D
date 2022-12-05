@@ -36,7 +36,7 @@ public class shoot : MonoBehaviour
      
         if(this.gameObject.tag == "Player1")
         {
-        GameObject bullet =  PhotonNetwork.Instantiate(starPrefab[0].name, new Vector3(pos.x, pos.y-1.5f,pos.z), transform.rotation);
+        GameObject bullet =  PhotonNetwork.Instantiate(starPrefab[0].name, new Vector3(pos.x, pos.y,pos.z), transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
      
         //bullet.tag = "star2";
@@ -44,7 +44,7 @@ public class shoot : MonoBehaviour
         }
         else
         {
-        GameObject bullet =  PhotonNetwork.Instantiate(starPrefab[1].name, new Vector3(pos.x, pos.y+1.5f,pos.z), transform.rotation);
+        GameObject bullet =  PhotonNetwork.Instantiate(starPrefab[1].name, new Vector3(pos.x, pos.y,pos.z), transform.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
      
       //  bullet.tag = "star2";
