@@ -325,6 +325,7 @@
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/playerMovetest.cs"
 "Assets/Scripts/aimScript.cs"
+"Assets/Scripts/backTo.cs"
 "Assets/Scripts/charManager.cs"
 "Assets/Scripts/collisionStar.cs"
 "Assets/Scripts/ConnectToServer.cs"

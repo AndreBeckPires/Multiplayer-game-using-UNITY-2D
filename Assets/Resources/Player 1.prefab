@@ -110,7 +110,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!114 &7080955287218933718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +129,7 @@ MonoBehaviour:
   contar: 0
   endgame: {fileID: 0}
   canvas: {fileID: 0}
+  pontos: 0
 --- !u!114 &8975462723612332885
 MonoBehaviour:
   m_ObjectHideFlags: 0

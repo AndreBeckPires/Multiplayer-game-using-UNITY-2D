@@ -16,6 +16,7 @@ public class movementscript : MonoBehaviour
     public bool contar;
   public  Text endgame;
    public GameObject canvas;
+   public int pontos = 0;
     // Update is called once per frame
    
     private void Start(){
@@ -27,12 +28,17 @@ public class movementscript : MonoBehaviour
         canvas = GameObject.Find("Canvas2");
          endgame = GameObject.Find("Canvas2/endgame").GetComponent<Text>();
          canvas.SetActive(false);
-         endgame.text = "oi";
+         
+         pontos = 0;
         
     }
     void Update()
     {
-       
+        if(PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        {     
+            contar = true;
+        }
+        endgame.text = "Sua Pontuação: " + pontos.ToString();
         if(view.IsMine)
         {
             Vector3 pos = transform.position;
@@ -67,21 +73,31 @@ public class movementscript : MonoBehaviour
             Debug.Log(time);
             if(time <= 0)
             {
-               // PhotonNetwork.LeaveRoom();
+            PhotonNetwork.LeaveRoom();
             canvas.SetActive(true);
+
 
               
             }
         }
 
-        if(PhotonNetwork.CurrentRoom.PlayerCount == 2)
-        {   
-          
-            contar = true;
-        }
+
         
         }
        
+    }
+
+     void OnCollisionEnter2D(Collision2D coll)
+    {
+         if(this.gameObject.tag == "Player1" && coll.transform.tag == "star2")
+         {
+            pontos--;
+           
+         }
+        if(this.gameObject.tag == "Player2" && coll.transform.tag == "star")
+         {
+            pontos--;
+         }
     }
 
 }
