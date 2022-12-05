@@ -11,28 +11,34 @@ public class movementscript : MonoBehaviour
    bool check1 = false, check2 = false;
    int numOfP;
    PhotonView view;
-   public float time;
+   public float time, time2;
    public Text timerText;
     public bool contar;
   public  Text endgame;
    public GameObject canvas;
    public int pontos = 0;
    public AudioSource audioPaz;
+   public  Text Waiting;
+   public GameObject canvas3;
+   
     // Update is called once per frame
    
     private void Start(){
         view = GetComponent<PhotonView>();
         Debug.Log(PhotonNetwork.LocalPlayer.ActorNumber);
         time = 45f;
+        time2 = 5f;
         contar = false;
         timerText = GameObject.Find("Canvas/Text").GetComponent<Text>();
         canvas = GameObject.Find("Canvas2");
          endgame = GameObject.Find("Canvas2/endgame").GetComponent<Text>();
          canvas.SetActive(false);
-         
+         canvas3 = GameObject.Find("Canvas3");
+         Waiting = GameObject.Find("Canvas3/Text").GetComponent<Text>();
          pontos = 0;
         audioPaz = GetComponent<AudioSource>();
         audioPaz.Play(0);
+       
         
     }
     void Update()
@@ -40,9 +46,18 @@ public class movementscript : MonoBehaviour
         if(PhotonNetwork.CurrentRoom.PlayerCount == 2)
         {     
             contar = true;
+           time2 -= Time.deltaTime;
+            Waiting.text = time2.ToString("F0");
+            if(time2 <= 0)
+            {
+                canvas3.SetActive(false);
+                this.gameObject.GetComponent<randomSpawnGoal>().playing=true;
+            }
         }
         endgame.text = "Sua Pontuação: " + pontos.ToString();
-        if(view.IsMine)
+        if(time2 <= 0)
+        {
+            if(view.IsMine)
         {
             Vector3 pos = transform.position;
             Vector3 mousePosition = (Camera.main.ScreenToWorldPoint(Input.mousePosition));
@@ -87,6 +102,8 @@ public class movementscript : MonoBehaviour
 
         
         }
+        }
+        
        
     }
 

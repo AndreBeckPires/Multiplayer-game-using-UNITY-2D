@@ -17,7 +17,7 @@ public class collisionStar : MonoBehaviour
         {
             Player = GameObject.Find("Player 1(Clone)");
         }
-                if(this.gameObject.tag == "sta2")
+        if(this.gameObject.tag == "star2")
         {
             Player = GameObject.Find("Player 2(Clone)");
         }

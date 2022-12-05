@@ -14,9 +14,11 @@ public class randomSpawnGoal : MonoBehaviour
     public float timeRemaining, timeRemaining2;
     public float rangeX1, rangeX2,rangeY1,rangeY2;
     public int player;
+    public bool playing;
     // Start is called before the first frame update
     void Start()
-    {
+    {   
+        playing = false;
         timeRemaining = resetTiming();
         timeRemaining2 = resetTiming();
         if(this.gameObject.tag == "Player1")
@@ -41,6 +43,7 @@ public class randomSpawnGoal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
+        if(playing)
         TimeCounter();
 
 
